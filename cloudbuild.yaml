@@ -32,6 +32,7 @@ steps:
             --image=${_REGION}-docker.pkg.dev/${PROJECT_ID}/cloud-run-deploy/artluz-landing-page-${BRANCH_NAME}:${COMMIT_SHA} \
             --runtime=${_RUNTIME} \
             --cpu=${_CPU} \
+            --service-account=${_SERVICE_ACCOUNT} \
             --memory=${_MEMORY} \
             --min-instances=${_MIN_INSTANCES} \
             --max-instances=${_MAX_INSTANCES} \
@@ -44,6 +45,7 @@ substitutions:
   _REGION: 'southamerica-east1'
   _RUNTIME: 'nodejs20'
   _CPU: "1"
+  _SERVICE_ACCOUNT: "deploy-cloud-run-583@artluz.iam.gserviceaccount.com"
   _MEMORY: "256Mi"
   _MIN_INSTANCES: "0"
   _MAX_INSTANCES: "default" # 'default' ou um número específico (ex: "10")
