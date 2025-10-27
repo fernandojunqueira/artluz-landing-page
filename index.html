@@ -1,13 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>artluz-landing-page</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtLuz - Professional Electrical Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- Google Fonts for professional typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>ArtLuz</h1>
+                <span class="tagline">Electrical Services</span>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=Hello!+I'd+like+to+request+a+quote." 
+               class="cta-button" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i>
+                Chat on WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero/About Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Professional Electrical Services</h2>
+                    <p class="hero-description">
+                        Hi! I'm Carlos, a certified electrician with over 25 years of experience helping homes and businesses stay safe and efficient. I specialize in residential and commercial electrical installations, maintenance, and troubleshooting. Need fast and reliable service? Let's talk on WhatsApp!
+                    </p>
+                    <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=Hello!+I'd+like+to+request+a+quote." 
+                       class="cta-button hero-cta" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        Get Free Quote on WhatsApp
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Carlos - Professional Electrician" 
+                         class="electrician-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container mySwiper test">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-carousel swiper-wrapper">
+                <div class="testimonial active swiper-slide">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Carlos was professional and quick! Fixed our power issue in less than an hour."</p>
+                    <p class="testimonial-author">— Maria L.</p>
+                </div>
+                <div class="testimonial swiper-slide">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Highly recommend ArtLuz! Honest pricing and excellent work."</p>
+                    <p class="testimonial-author">— João R.</p>
+                </div>
+                <div class="testimonial swiper-slide">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Great service! Carlos explained everything clearly and did a perfect job."</p>
+                    <p class="testimonial-author">— Ana S.</p>
+                </div>
+                <div class="testimonial swiper-slide">
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Arrived on time and solved everything without hassle. Very friendly."</p>
+                    <p class="testimonial-author">— Pedro M.</p>
+                </div>
+                <div class="testimonial swiper-slide">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The best electrician I've worked with. Reliable and trustworthy."</p>
+                    <p class="testimonial-author">— Laura P.</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <!-- <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+                <span class="indicator" data-slide="4"></span>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contact & Social Section (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>carlos@artluz.com</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=Hello!+I'd+like+to+request+a+quote." 
+                           target="_blank" rel="noopener" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/artluz" target="_blank" rel="noopener" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/artluz" target="_blank" rel="noopener" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-cta">
+                    <h3>Ready to Get Started?</h3>
+                    <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=Hello!+I'd+like+to+request+a+quote." 
+                       class="cta-button footer-cta-btn" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ArtLuz Electrical Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="carrosel.js"></script>
+</body>
 </html>

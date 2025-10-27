@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
+# ArtLuz - Electrician Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for electrical services built with HTML, CSS, and vanilla JavaScript.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Single CTA Focus**: All sections guide visitors to WhatsApp contact
+- **Responsive Design**: Works perfectly on mobile, tablet, and desktop
+- **Modern UI**: Clean design with professional typography and smooth animations
+- **Testimonials Carousel**: Auto-rotating customer reviews
+- **Performance Optimized**: Fast loading with lazy loading and efficient code
 
-## React Compiler
+## Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Open `index.html` in your web browser
+2. Customize the phone number in WhatsApp links
+3. Replace placeholder content with your actual information
 
-## Expanding the ESLint configuration
+## Customization
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Phone Number
+Replace `YOUR_NUMBER` in all WhatsApp links with your actual phone number (include country code, no spaces or special characters).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Example: `+1234567890`
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Content Updates
+- **Company Name**: Update "ArtLuz" in the header and throughout the page
+- **Electrician Name**: Change "Carlos" to your name
+- **Contact Information**: Update phone and email in the footer
+- **Social Media**: Update Instagram and Facebook links
+- **Testimonials**: Replace with your actual customer reviews
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Styling
+- **Colors**: Modify the CSS custom properties in `styles.css`
+- **Fonts**: Change the Google Fonts import in `index.html`
+- **Images**: Replace the placeholder electrician photo with your own
+
+## File Structure
+
+```
+artluz-landing-page/
+├── index.html          # Main HTML structure
+├── styles.css          # All styling and responsive design
+├── script.js           # JavaScript functionality
+└── README.md           # This file
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Browser Support
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Performance
+
+- No external JavaScript frameworks
+- Optimized images and CSS
+- Lazy loading for better performance
+- Mobile-first responsive design
+
+## License
+
+This project is open source and available under the MIT License.
